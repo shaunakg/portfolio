@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -17,7 +18,8 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          title,
+          author
         }
       }
     }
@@ -34,12 +36,12 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Link to="https://github.com/shaunakg">
+        <footer>
+            <span role="img" aria-label="emoji">🎉</span> © {new Date().getFullYear()} {data.site.siteMetadata.author}
+        </footer>
+      </Link>
     </>
   )
 }
