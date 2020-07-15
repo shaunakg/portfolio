@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaunak G - Web Developer</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143676169-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143676169-3');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="description" content="I'm a web developer that works with HTML, CSS and .">
+    <meta name="keywords" content="Shaunak Gadkari,Shaunak,Gadkari,internet,web,www,webdev,webdesign,design,js,html,css">
+    <meta name="author" content="Shaunak Gadkari">
+    <meta name="creator" content="Shaunak Gadkari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color" content="#485a78">
+    <meta name="color-scheme" content="only light">
+    <link rel="canonical" href="https://shaunak.io/" />
+
+    <!-- Favicon and Metro Tiles -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://assets.shaunak.io/images/icon.svg" />
+    <link rel="apple-touch-icon" sizes="152x152" href="http://assets.shaunak.io/images/icon.svg" />
+    <link rel="icon" type="image/png" href="http://assets.shaunak.io/images/icon.svg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="http://assets.shaunak.io/images/icon.svg" sizes="16x16" />
+    <meta name="application-name" content="Shaunak G - Web Developer"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="/libs/vibrant.js"></script>
+    <script src="//s3-us-west-2.amazonaws.com/momently-static/loader/v5MRgwAmARg_momently.js" name="momently-script"></script>
+
+    <link rel="stylesheet" href="images/pagebg/1.css">
+    <link rel="stylesheet" href="images/pagebg/2.css">
+    <link rel="stylesheet" href="images/pagebg/projects-title.css">
+
+</head>
+
+<body>
+
+<span id="popLine" class="popbar"></span>
+
+<div id="pg1" class="page">
+    <div class="colsec">
+        <div id="hellotext" class="text">
+            <h1 onclick="easter(this)" id="hello">Hi! I'm Shaunak Gadkari.</h1>
+            <p id="description"><a href="mailto:me@shaunak.io">Contact me</a> or scroll to find out more.</p>
+        </div>
+    </div>
+</div>
+
+<div id="pg2" class="page">
+
+    <div class="colsec table">
+
+        <div class="cell title">
+            <p>
+                Projects
+            </p>
+        </div>
+
+        <a class="cell light text-dark" href="//covid-anonymous.herokuapp.com" onclick="ga('send','event','Interactions', 'Click','link', this.src)">
+            <div class="description">
+                <p>
+                    <p>A webapp that allows COVID-19 diagnosees to anonymously notify their families of their status.</p>
+                </p>
+            </div> 
+
+            <img class="table-img" src="images/project-icons/covan.webp" alt="Screenshot of the email recieved after submitting information in the COVAN site.">
+        </a>
+
+        <a class="cell light" href="//jmss-plastic-oceans.github.io" onclick="ga('send','event','Interactions', 'Click','link', this.src)">
+            <div class="description">
+                <p>
+                    <p>A dynamic website for a student activism group at my school.</p>
+                </p>
+            </div> 
+            <img class="table-img" src="images/project-icons/plastic-oceans.png" alt="JMSS Plastic Oceans' logo">
+        </a>
+
+        <a class="cell light" href="//colab.research.google.com/github/shaunakg/gpt2-simple-social/blob/master/GPT_2_Text_Generation_Training.ipynb" onclick="ga('send','event','Interactions', 'Click','link', this.src)">
+            <div class="description">
+                <p>
+                    <p>A python scraper to train machine learning models on social media.</p>
+                </p>
+            </div> 
+            <img class="table-img" src="images/project-icons/gpt2social.webp" alt="Screenshot of program code.">
+        </a>
+
+        <a class="cell dark" href="//github.com/shaunakg/bookofreddit" onclick="ga('send','event','Interactions', 'Click','link', this.src)">
+            <div class="description">
+                <p>
+                    <p>Creates Kindle-compatible ebooks with rich metadata and formatting from reddit.com posts.</p>
+                </p>
+            </div> 
+            <img class="table-img" src="images/project-icons/bor.webp" alt="Colorful screenshot of programming running in a terminal.">
+        </a>
+
+    </div>
+</div>
+
+</body>
+
+<script>
+let ogtext;
+let doTypeAnimation = true;
+let intervals = [];
+let currentEle;
+let mi = 0;
+
+// Hey! No peeking!
+let cmsg = [
+    "Hi, I'm Shaunak Gadkari",
+    "Hey! No clicking.",
+    "Seriously, stop.",
+    "Again? Why?",
+    "There's no easter egg here, you know.",
+    "You're genuinely annoying me.",
+    "Everytime you click this, one server dies.",
+    "That's seven gone already. :-(",
+    "Eight.",
+    "Nine.",
+    "Ten.",
+    "Eleven.",
+    "Fine,‌‌‌‌‍﻿‌﻿‌‌‌‌‍‬‬‌ ‌‌‌‌‍‬‌‍I‌‌‌‌‍﻿‍‍‌‌‌‌‍‬﻿‬‌‌‌‌‍‬‌‍'ll‌‌‌‌‍‬‬﻿ give ‌‌‌‌‌‬﻿‬you‌‌‌‌‍‬‬‍ ‌‌‌‌‍‬﻿﻿an‌‌‌‌‌‬﻿﻿ ‌‌‌‌‍‬‍‍‌‌‌‌‍‬‌‍‌‌‌‌‍﻿‌﻿‌‌‌‌‍﻿‍‌‌‌‌‌‍‬‍‍easter‌‌‌‌‍﻿‌‬ egg‌‌‌‌‌‬﻿﻿.",
+    "Did you get it?",
+    "It was very small!",
+    "Almost zero-width, actually.",
+    "Anyhow, this is the end of the road for me.",
+    "I mean, I don't have an endless cache of messages.",
+    "This is the last one, actually."
+]
+
+let anispd = 60;
+
+function decodeHTML(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
+
+function typeIt(ele, spd=anispd, custom=undefined) {
+
+    let cursor = 0;
+
+    // Backup the current state of the element to global var
+    currentEle = ele;
+
+    // Start the typing cursor
+    ele.classList.add("currently-typing");
+    ele.classList.remove("finished-typing");
+
+    // Backup the original text and erase it from the element so we can type it
+    ogtext = custom || decodeHTML(ele.innerHTML);
+    ele.innerHTML = "";
+
+    intervals.push(setInterval((ele) => {
+        if (intervals.length > 1) {
+            ele.innerText = ogtext;
+            intervals.forEach(clearInterval);
+            intervals = [];
+        } else if (doTypeAnimation) {
+            if (ogtext[cursor] != undefined) {
+                ele.innerText += ogtext[cursor];
+                cursor++;
+            } else if (cursor > ogtext.length) {
+                // This happens after the typing has completed.
+                clearInterval(intervals[0]);
+                cursor = 0;
+                // [disabled] stops the cursor from blinking after completion of typing
+                ele.classList.remove("currently-typing");
+                ele.classList.add("finished-typing");
+                intervals = []
+
+                doTypeAnimation = false;
+                setTimeout(()=>{doTypeAnimation = true}, 2)
+                
+            } else {
+                // This happens after the typing has completed.
+                clearInterval(intervals[0]);
+                cursor = 0;
+                // [disabled] stops the cursor from blinking after completion of typing
+                ele.classList.remove("currently-typing");
+                ele.classList.add("finished-typing");
+                intervals = []
+
+                doTypeAnimation = false;
+                setTimeout(()=>{doTypeAnimation = true}, 2)
+            }
+        } else {
+            clearInterval(intervalId);
+            cursor = 0;
+        }
+    }, spd, ele));
+
+}
+
+typeIt(document.getElementById("hello"));
+
+function easter(e) {
+    typeIt(e,30,cmsg[mi%cmsg.length]);
+    mi++;
+    e.dataset.next=cmsg[mi%cmsg.length];
+    ga('send','event','Interactions', 'Click', 'Easter Egg', mi%cmsg.length);
+}
+
+let from = new URL(document.location.href).searchParams.get("from");
+if (from) {
+    ga('send','event','Interactions',"From","website before this",from);
+}
+
+</script>
+
+</html>
