@@ -34,7 +34,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={[styles.card, styles.whoami].join(" ")}>
+          <a href="/about" className={[styles.card, styles.whoami].join(" ")}>
             <h3>Who I am &rarr;</h3>
             <p>I create innovative and scalable web solutions.</p>
           </a>
@@ -45,7 +45,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://github.com/shaunakg"
             className={[styles.card, styles.github].join(" ")}
           >
             <h3>Github &rarr;</h3>
