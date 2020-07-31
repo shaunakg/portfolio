@@ -19,3 +19,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: #ED6A5A;
+  color: white;
+}
+

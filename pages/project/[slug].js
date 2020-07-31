@@ -4,8 +4,9 @@ import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import client from '../../client';
-import styles from './Project.module.css';
+import styles from '../../styles/Project.module.css';
 import Head from 'next/head';
+import Header from '../../components/header';
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -47,6 +48,8 @@ const Project = (props) => {
     <meta property="twitter:image" content={urlFor(projectimage).url()} />
 
     </Head>
+
+    <Header/>
 
     <main className={styles.wrapper}>
       <article className={styles.article}>
@@ -103,7 +106,6 @@ const query = groq`*[_type == "project" && slug.current == $slug][0]{
 }`
 
 Project.getInitialProps = async function(context) {
-  // It's important to default the slug so that it doesn't return "undefined"
   const { slug = "" } = context.query
   return await client.fetch(query, { slug })
 }

@@ -16,6 +16,7 @@
 .article {
     max-width: 60vw;
     margin: 3rem 0;
+    margin-top: 0.5rem;
 }
 
 .article h1 {
