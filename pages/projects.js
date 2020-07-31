@@ -47,7 +47,7 @@ const Projects = (props) => {
                     {projects.map(
                     ({ _id, title = '', slug = '', _updatedAt = '', mainImage, description  }) =>
                         slug && (
-                            <Link href="/project/[slug]" as={`/project/${slug.current}`}>
+                            <Link key={_id} href="/projects/[slug]" as={`/projects/${slug.current}`}>
                                 <a className={styles.project}>
                                     { mainImage && <img src={urlFor(mainImage).height(300).url()}/> }
                                     <h2>{title}</h2>
@@ -57,7 +57,6 @@ const Projects = (props) => {
                         )
                     )}
                 </div>
-
             </article>
         </main>
         </>

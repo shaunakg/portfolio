@@ -82,6 +82,7 @@
 
 .main article {
     width: 60vw;
+    margin: 40px;
 }
 
 @media (max-width: 800px) {
@@ -91,6 +92,7 @@
 
     .main article .container .project {
         max-width: 100%;
+        margin: 10px 0;
     }
 
     .main article .bigTitle {
