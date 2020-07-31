@@ -2,12 +2,14 @@
 .header {
     width: 100vw;
     max-height: 100px;
-    padding: 20px;
+    padding: 15px;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+
+    border-bottom: 1px solid #EEE;
 }
 
 .header img {

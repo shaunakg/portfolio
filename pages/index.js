@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -34,15 +35,19 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/about" className={[styles.card, styles.whoami].join(" ")}>
-            <h3>Who I am &rarr;</h3>
-            <p>I create innovative and scalable web solutions.</p>
-          </a>
+          {/* <Link to="about"> */}
+            <a href="about/" className={[styles.card, styles.whoami].join(" ")}>
+              <h3>Who I am &rarr;</h3>
+              <p>I create innovative and scalable web solutions.</p>
+            </a>
+          {/* </Link> */}
 
-          <a href="/projects" className={[styles.card, styles.projects].join(" ")}>
-            <h3>Projects &rarr;</h3>
-            <p>See some of my past projects that have helped the community.</p>
-          </a>
+          {/* <Link to="projects"> */}
+            <a href="projects/" className={[styles.card, styles.projects].join(" ")}>
+              <h3>Projects &rarr;</h3>
+              <p>See some of my past projects that have helped the community.</p>
+            </a>
+          {/* </Link> */}
 
           <a
             href="https://github.com/shaunakg"
@@ -61,6 +66,7 @@ export default function Home() {
               Find me on Twitter, where I post interesting projects.
             </p>
           </a>
+
         </div>
       </main>
 

@@ -19,13 +19,13 @@
     margin-top: 0.5rem;
 }
 
-.article h1 {
+.bigTitle {
     font-size: 5rem;
     margin: 1rem 0;
 }
 
 @supports (-webkit-background-clip: text) {
-    .article h1 {
+    .bigTitle {
         background: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
         background-clip: text;
         background-size: 200%;
@@ -45,7 +45,7 @@
         max-width: 90vw;
     }
 
-    .article h1 {
+    .bigTitle {
         font-size: 3.5rem;
     }
 }
@@ -65,7 +65,8 @@
     width: 100%;
     padding: 10px;
     margin: 7px 0;
-    background-color: rgba(0,0,0, 0.13);
+    /* background-color: rgba(0,0,0, 0.13); */
+    border: 2px solid #EEE;
     border-radius: 1px;
     border-left: 5px solid lightcoral;
 }

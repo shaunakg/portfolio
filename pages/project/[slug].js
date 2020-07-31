@@ -53,7 +53,7 @@ const Project = (props) => {
 
     <main className={styles.wrapper}>
       <article className={styles.article}>
-        <h1>{title}</h1>
+        <h1 className={styles.bigTitle} >{title}</h1>
 
         <span className={styles.authors} >Created by {authors.join(", ")}</span><br/>
 
