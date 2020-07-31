@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
         
         <title>Shaunak Gadkari 🌌 | Web Developer</title>
-        <link rel="icon" href="https://cdn.srg.codes/images/icon/icon-512.png" />
 
         <meta property="og:title" content="Shaunak Gadkari - Web Developer" />
         <meta property="og:site_name" content="Shaunak Gadkari | Web Developer" />
