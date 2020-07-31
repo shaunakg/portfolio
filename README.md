@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6136ce32-642c-4daf-b78e-4223f43a3399/deploy-status)](https://app.netlify.com/sites/shaunakg-default-01/deploys)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fshaunakg%2Fportfolio%2F&project-name=my-cool-portfolio&repository-name=my-cool-portfolio)
 
 You can use the [editor on GitHub](https://github.com/jacksonsevendelta/jacksonsevendelta.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
