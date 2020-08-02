@@ -56,14 +56,14 @@
       "short_name": "About me",
       "description": "Learn about who I am and what I can do for you.",
       "url": "/about?utm_source=homescreen",
-      "icons": [{ "src": "/icons/who.png", "sizes": "192x192" }]
+      "icons": [{ "src": "/images/icons/who.png", "sizes": "192x192" }]
     },
     {
       "name": "Work I've done",
       "short_name": "Work I've done",
       "description": "Learn about my past projects in web development and design.",
       "url": "/projects?utm_source=homescreen",
-      "icons": [{ "src": "/icons/work.png", "sizes": "192x192" }]
+      "icons": [{ "src": "/images/icons/work.png", "sizes": "192x192" }]
     }
   ]
 }
