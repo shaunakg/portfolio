@@ -12,7 +12,8 @@ class MyDocument extends Document {
 
         <Head>
 
-            <link rel="icon" href="https://cdn.srg.codes/images/icon/icon-512.png" />
+            <meta charset='utf-8' />
+            <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
 
             <meta property="og:title" content="Shaunak Gadkari - Web Developer" />
             <meta property="og:site_name" content="Shaunak Gadkari | Web Developer" />
@@ -26,6 +27,12 @@ class MyDocument extends Document {
             <meta name="twitter:description" content="I create innovative and scalable web solutions. Contact me at hello@srg.codes for a free quote." />
             <meta name="twitter:title" content="Shaunak Gadkari | Web Developer" />
             <meta name="twitter:image" content="https://cdn.srg.codes/images/header/header@3x.png" />
+
+            <link rel="manifest" href="/manifest.json" />
+            <link href='https://cdn.srg.codes/images/icon/icon-192.png' rel='icon' type='image/png' sizes='192x192' />
+            <link href='https://cdn.srg.codes/images/icon/icon-512.png' rel='icon' type='image/png' sizes='512x512' />
+            <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+            <meta name="theme-color" content="#000000"/>
 
         </Head>
 
