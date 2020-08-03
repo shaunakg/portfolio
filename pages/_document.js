@@ -1,8 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import QRCode from 'qrcode.react';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
+    const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps }
   }
 
@@ -12,8 +13,7 @@ class MyDocument extends Document {
 
         <Head>
 
-            <meta charset='utf-8' />
-            <meta name='viewport' content='width=device-width' />
+            <meta charSet='utf-8' />
 
             <meta name="title" content="Shaunak G 🌌 | Web Developer" />
             <meta name="description" content="I create innovative and scalable web solutions. Contact me at hello@srg.codes for a free quote." />
@@ -40,9 +40,12 @@ class MyDocument extends Document {
         </Head>
 
         <body>
+          
           <Main />
           <NextScript />
+
         </body>
+
       </Html>
     )
   }
