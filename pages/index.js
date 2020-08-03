@@ -29,9 +29,9 @@ export default function Home() {
           Shaunak Gadkari
         </h1>
 
-        <p className={styles.description}>
+        <h2 className={styles.description}>
           I'm a web developer based in Melbourne.
-        </p>
+        </h2>
 
         <div className={styles.grid}>
           {/* <Link to="about"> */}
