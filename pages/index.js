@@ -69,9 +69,9 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <img src="https://cdn.virgo.srg.codes/logos/logotype/logotype.svg" alt="Vercel Logo" className={styles.logo} />
-      </footer>
+      </footer> */}
     </div>
   )
 }
