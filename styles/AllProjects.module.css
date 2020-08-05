@@ -10,7 +10,9 @@
 .main article .bigTitle {
     font-size: 7rem;
     width: 100%;
-    margin: 1rem 0;
+    margin: 2rem 0;
+    margin-top: 0;
+    text-align: center;
 }
 
 .main article .container {
