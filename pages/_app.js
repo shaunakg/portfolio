@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
     <Head>
       <meta name='viewport' content='width=device-width' />
+      <script src="https://cdn.srg.codes/scripts/easter_egg.js"></script>
     </Head>
     <Component {...pageProps} />
     </>
