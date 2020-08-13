@@ -73,7 +73,7 @@ const Project = (props) => {
 
             builtwithtitle.map((e, i) => (
               <li key={i} className={styles.technology}>
-                <img src={urlFor(builtwithimage[i]).height(50).url()}/> {e}
+                <img alt={`${e} logo`} src={urlFor(builtwithimage[i]).height(50).url()}/> {e}
               </li>
             ))
 
