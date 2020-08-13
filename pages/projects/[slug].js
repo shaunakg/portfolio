@@ -60,6 +60,7 @@ const Project = (props) => {
         <img
           className={styles.mainImg}
           src={urlFor(projectimage).url()}
+          alt={`Main image of the ${title} project.`}
         />
 
         <div className={styles.goButtonContainer}>
