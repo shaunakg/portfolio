@@ -42,7 +42,7 @@ const Project = (props) => {
       <meta property="og:image" content={urlFor(projectimage).url()} />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={"https://srg.codes/project/" + slug} />
+      <meta property="twitter:url" content={"https://srg.codes/project/" + slug.current} />
       <meta property="twitter:title" content={`${title} | Shaunak G - Web Developer`} />
       <meta property="twitter:description" content={shortdescription} />
       <meta property="twitter:image" content={urlFor(projectimage).url()} />
