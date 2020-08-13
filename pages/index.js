@@ -9,6 +9,9 @@ export default function Home() {
         
         <title>Shaunak Gadkari 🌌 | Web Developer</title>
 
+        <meta name="title" content="Shaunak G 🌌 | Web Developer" />
+        <meta name="description" content="I create innovative and scalable web solutions. Contact me at hello@srg.codes for a free quote." />
+
         <meta property="og:title" content="Shaunak Gadkari - Web Developer" />
         <meta property="og:site_name" content="Shaunak Gadkari | Web Developer" />
         <meta property="og:url" content="https://srg.codes" />

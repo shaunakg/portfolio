@@ -15,22 +15,6 @@ class MyDocument extends Document {
 
             <meta charSet='utf-8' />
 
-            <meta name="title" content="Shaunak G 🌌 | Web Developer" />
-            <meta name="description" content="I create innovative and scalable web solutions. Contact me at hello@srg.codes for a free quote." />
-
-            <meta property="og:title" content="Shaunak Gadkari - Web Developer" />
-            <meta property="og:site_name" content="Shaunak Gadkari | Web Developer" />
-            <meta property="og:url" content="https://srg.codes" />
-            <meta property="og:description" content="I create innovative and scalable web solutions. Contact me at hello@srg.codes for a free quote." />
-            <meta property="og:type" content="website" />
-            <meta property="og:image" content="https://cdn.srg.codes/images/header/header@3x.png" />
-
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content="@shaunak_g" />
-            <meta name="twitter:description" content="I create innovative and scalable web solutions. Contact me at hello@srg.codes for a free quote." />
-            <meta name="twitter:title" content="Shaunak Gadkari | Web Developer" />
-            <meta name="twitter:image" content="https://cdn.srg.codes/images/header/header@3x.png" />
-
             <link rel="manifest" href="/manifest.json" />
             <link href='https://cdn.srg.codes/images/icon/icon-192.png' rel='icon' type='image/png' sizes='192x192' />
             <link href='https://cdn.srg.codes/images/icon/icon-512.png' rel='icon' type='image/png' sizes='512x512' />
