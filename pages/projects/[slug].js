@@ -36,13 +36,13 @@ const Project = (props) => {
       <meta name="description" content={shortdescription} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={"https://srg.codes/project/" + slug.current} />
+      <meta property="og:url" content={"https://srg.codes/projects/" + slug.current} />
       <meta property="og:title" content={`${title} | Shaunak G - Web Developer`} />
       <meta property="og:description" content={shortdescription} />
       <meta property="og:image" content={urlFor(projectimage).url()} />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={"https://srg.codes/project/" + slug.current} />
+      <meta property="twitter:url" content={"https://srg.codes/projects/" + slug.current} />
       <meta property="twitter:title" content={`${title} | Shaunak G - Web Developer`} />
       <meta property="twitter:description" content={shortdescription} />
       <meta property="twitter:image" content={urlFor(projectimage).url()} />
