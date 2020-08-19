@@ -47,18 +47,14 @@ const About = (props) => {
                     <span className="tagword"> compliant</span> websites.
                 </h2>
 
-                <p>
-                    Check out the 
-                    <a href="../projects/"> projects I've done.</a>
-                </p>
-
-                You can find me on:
-                <ul>
-                    <li><a href="https://twitter.com/shaunak_g">Twitter</a></li>
-                    <li><a href="https://github.com/shaunakg">Github</a></li>
-                    <li><a href="https://facebook.com/shaunak.gadkari">Facebook</a></li>
-                    <li><a href="https://instagram.com/shaunak.r.g">Instagram</a></li>
-                </ul>
+                <div className={styles.socials}>
+                    <a href="../projects/">Projects</a>
+                    <a href="https://twitter.com/shaunak_g">Twitter</a>
+                    <a href="https://github.com/shaunakg">Github</a>
+                    <a href="https://facebook.com/shaunak.gadkari">Facebook</a>
+                    <a href="https://instagram.com/shaunak.r.g">Instagram</a>
+                    <a href="mailto:hello@srg.codes">Email</a>
+                </div>
 
             </article>
 
