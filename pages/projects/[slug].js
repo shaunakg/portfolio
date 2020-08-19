@@ -6,17 +6,24 @@ import BlockContent from '@sanity/block-content-to-react'
 import client from '../../client';
 import styles from '../../styles/Project.module.css';
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from '../../components/header';
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
 
+function truncate( str, n, useWordBoundary ){
+  if (str.length <= n) { return str; }
+  const subString = str.substr(0, n-1);
+  return subString.substr(0, subString.lastIndexOf(" ")) + "...";
+};
+
 const Project = (props) => {
   const { 
     title = 'srg.codes project',
     projectimage,
-    shortdescription = "A innovative project on https://srg.codes",
+    shortdescription = "An innovative project on https://srg.codes",
     articlecontent,
     authors = 'Shaunak Gadkari',
     builtwithtitle,
@@ -25,6 +32,12 @@ const Project = (props) => {
     sourceLink,
     slug
   } = props;
+
+  const tweetBody = truncate(`${title}: ${shortdescription}`, 250, true);
+  const tweetURL = "https://srg.codes/projects/" + slug.current;
+  const tweetVia = "shaunak_g";
+
+  const tweetLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(tweetURL)}&via=${encodeURIComponent(tweetVia)}&text=${encodeURIComponent(tweetBody)}`;
 
   return (
     <>
@@ -85,6 +98,20 @@ const Project = (props) => {
           imageOptions={{ w: 320, h: 240, fit: 'max' }}
           {...client.config()}
         />
+
+        <a href={tweetURL}>
+          <div className={[styles.share, styles.author].join(" ")}>
+            <p>Writeup by Shaunak Gadkari. Contact me at hello@srg.codes for a free quote and assessment of your web development needs.</p>
+            <img src={"https://cdn.srg.codes/images/icon/icon.svg"} />
+          </div>
+        </a>
+
+        <a href={tweetLink}>
+          <div className={styles.share}>
+            <p>I work hard on these projects and writeups. If you liked this one, I'd appreciate if you shared it on Twitter. Just click here.</p>
+            <img src={"https://cdn.srg.codes/images/external/social/Twitter_Logo_WhiteOnBlue.svg"} />
+          </div>
+        </a>
 
       </article>
     </main>

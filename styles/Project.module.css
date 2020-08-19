@@ -108,3 +108,33 @@
     transition: 0.5s;
     background: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);
 }
+
+.share {
+    padding: 20px;
+    background-color: #1da1f2;
+
+    display: flex;
+    flex-flow: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 20px 0;
+}
+
+.share.author { 
+    background-color: lightcoral;
+}
+
+.share p {
+    color: white;
+    font-size: 1.2rem;
+    /* float: left; */
+    max-width: 60%;
+}
+
+.share img {
+    max-height: 150px;
+    margin: 0;
+    /* max-width: 30%; */
+}
