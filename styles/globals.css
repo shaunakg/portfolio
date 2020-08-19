@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 html,
 body {
@@ -21,7 +21,9 @@ a {
 }
 
 ::selection {
-  background-color: #ED6A5A;
+  background-color: black;
+  opacity: 1;
+  background-clip: unset;
+  -webkit-background-clip: unset;
   color: white;
 }
-

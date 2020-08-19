@@ -28,6 +28,12 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
+          <noscript>
+            <img src="https://srg-analytics.herokuapp.com/ingress/d9879e68-0f0a-43b1-80c6-8130f4255b6a/pixel.gif" />
+          </noscript>
+          <script src="https://srg-analytics.herokuapp.com/ingress/d9879e68-0f0a-43b1-80c6-8130f4255b6a/script.js"></script>
+
+
         </body>
 
       </Html>
