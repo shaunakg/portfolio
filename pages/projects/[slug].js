@@ -33,11 +33,14 @@ const Project = (props) => {
     slug
   } = props;
 
-  const tweetBody = truncate(`${title}: ${shortdescription}`, 250, true);
-  const tweetURL = "https://srg.codes/projects/" + slug.current;
-  const tweetVia = "shaunak_g";
+  const shareBody = truncate(`${title}: ${shortdescription}`, 250, true);
+  const shareURL = "https://srg.codes/projects/" + slug.current;
 
-  const tweetLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(tweetURL)}&via=${encodeURIComponent(tweetVia)}&text=${encodeURIComponent(tweetBody)}`;
+  const tweetVia = "shaunak_g";
+  const fbAppId = "298798058120939";
+
+  const tweetLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareURL)}&via=${encodeURIComponent(tweetVia)}&text=${encodeURIComponent(shareBody)}`;
+  const fbLink = `https://www.facebook.com/dialog/share?app_id=${encodeURIComponent(fbAppId)}&href=${encodeURIComponent(shareURL)}&quote=${encodeURIComponent(shareBody)}`;
 
   return (
     <>
@@ -99,7 +102,7 @@ const Project = (props) => {
           {...client.config()}
         />
 
-        <a href={tweetURL}>
+        <a href={shareURL}>
           <div className={[styles.share, styles.author].join(" ")}>
             <p>Writeup by Shaunak Gadkari. Contact me at hello@srg.codes for a free quote and assessment of your web development needs.</p>
             <img src={"https://cdn.srg.codes/images/icon/icon.svg"} />
@@ -110,6 +113,13 @@ const Project = (props) => {
           <div className={styles.share}>
             <p>I work hard on these projects and writeups. If you liked this one, I'd appreciate if you shared it on Twitter. Just click here.</p>
             <img src={"https://cdn.srg.codes/images/external/social/Twitter_Logo_WhiteOnBlue.svg"} />
+          </div>
+        </a>
+
+        <a href={fbLink}>
+          <div className={[styles.share, styles.facebook].join(" ")}>
+            <p>If Facebook is more your style, you can share it there too. Just click here.</p>
+            <img src={"https://cdn.srg.codes/images/external/social/f_logo_RGB-Blue_144.png"} />
           </div>
         </a>
 
