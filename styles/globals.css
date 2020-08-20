@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+p > a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: midnightblue;
+}
+
 * {
   box-sizing: border-box;
 }
