@@ -40,7 +40,7 @@ const Project = (props) => {
   const fbAppId = "298798058120939";
 
   const tweetLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareURL)}&via=${encodeURIComponent(tweetVia)}&text=${encodeURIComponent(shareBody)}`;
-  const fbLink = `https://www.facebook.com/dialog/share?app_id=${encodeURIComponent(fbAppId)}&href=${encodeURIComponent(shareURL)}&quote=${encodeURIComponent(shareBody)}`;
+  const fbLink = `https://www.facebook.com/dialog/share?app_id=${encodeURIComponent(fbAppId)}&href=${encodeURIComponent(shareURL)}&quote=${encodeURIComponent(shareBody)}&redirect_uri=${encodeURIComponent(shareURL)}`;
 
   return (
     <>
