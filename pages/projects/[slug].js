@@ -30,6 +30,8 @@ const Project = (props) => {
     builtwithimage,
     goLink,
     sourceLink,
+    keywords,
+    hashtags,
     slug
   } = props;
 
@@ -39,8 +41,8 @@ const Project = (props) => {
   const tweetVia = "shaunak_g";
   const fbAppId = "298798058120939";
 
-  const tweetLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareURL)}&via=${encodeURIComponent(tweetVia)}&text=${encodeURIComponent(shareBody)}`;
-  const fbLink = `https://www.facebook.com/dialog/share?app_id=${encodeURIComponent(fbAppId)}&href=${encodeURIComponent(shareURL)}&quote=${encodeURIComponent(shareBody)}&redirect_uri=${encodeURIComponent(shareURL)}`;
+  const tweetLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareURL)}&via=${encodeURIComponent(tweetVia)}&text=${encodeURIComponent(shareBody)}&hashtags=${hashtags.map(encodeURIComponent).join(",")}`;
+  const fbLink = `https://www.facebook.com/dialog/share?app_id=${encodeURIComponent(fbAppId)}&href=${encodeURIComponent(shareURL)}&quote=${encodeURIComponent(shareBody)}&redirect_uri=${encodeURIComponent(shareURL)}&hashtag=#${encodeURIComponent(hashtags[0])}`;
 
   return (
     <>
@@ -62,6 +64,8 @@ const Project = (props) => {
       <meta property="twitter:title" content={`${title} | Shaunak G - Web Developer`} />
       <meta property="twitter:description" content={shortdescription} />
       <meta property="twitter:image" content={urlFor(projectimage).url()} />
+
+      <meta name="keywords" content={"Shaunak, Shaunak G, Web Development, Web Design, Development, Design, Programming, " + keywords.join(", ")} />
 
     </Head>
 
@@ -138,6 +142,8 @@ const query = groq`*[_type == "project" && slug.current == $slug][0]{
   articlecontent,
   "builtwithtitle": builtwith[]->title,
   "builtwithimage": builtwith[]->mainImage,
+  "keywords": keywords[],
+  "hashtags": hashtags[],
   "goLink": publishLink,
   "sourceLink": codeLink,
   "slug": slug
